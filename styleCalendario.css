@@ -1,0 +1,120 @@
+/*Distancia del contenido*/
+.contenido{
+    padding-bottom: 3em;
+}
+.controles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/*Estilo de la tabla*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-bottom: 30px;
+}
+/*Estilo de los dias semana*/
+th {
+    background: #4CAF50;
+    color: white;
+    padding: 8px;
+    border-top: 30px;
+}
+/*Estilo de los dias meses*/
+td {
+    border: 1px solid #ccc;
+    height: 48px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+td:hover {
+    background: #e0f3e0;
+}
+/*Cambio color cuando se pulsa el dia*/
+td.seleccionado {
+    background: #4CAF50;
+    color: white;
+}
+/*Estilo y formato del menu de comidas*/
+.comidas-panel {
+    border: 1px solid #4CAF50;
+    padding: 15px;
+    background: #f8fff8;
+    border-radius: 8px;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    
+    
+}
+
+.grupo {
+    margin-bottom: 15px;
+}
+/*Boton de añadir + comidas*/
+.btnAdd {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btnAdd:hover {
+    background: #3c8b40;
+}
+/*Formato del campo donde se muestran las comidas*/
+.item {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    width: auto;
+    min-width: 30%;
+    
+    
+}
+/* Tooltip para previsualizar comidas */
+.tooltip {
+    position: absolute;
+    background: #333333;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 999;
+    max-width: 200px;
+    white-space: pre-line;
+    display: none;
+}
+.container {
+    width: 420px;
+}
+.item-container {
+    display: flex;
+    align-items: center;
+}
+
+.borrar-btn {
+    margin-left: 5px;
+}
+/*Estilo de los select superioress*/
+.Cuadro-anho{
+    padding: 10px;
+    border: 2px solid #A5D6A7;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.Cuadro-anho:hover{
+    outline: none;
+    border-color: #4CAF50;
+}
