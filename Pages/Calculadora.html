@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Mish | Calculadora de IMC</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/styleCalc.css">
+    
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu_contenedor"> 
+            <h1 class="menu_logo">Nutri-Mish <img id=logo src="../ICONS/Logo.png"></h1>
+
+            <ul class="menu_rutas">
+                <li class="menu_item menu_item--show">
+                    <a href="../Pages/index.html" class="menu_ruta">Inicio</a> <!--Esto es un "Link pulsable"-->
+                </li>
+            
+                <li class="menu_item">
+                    <a href="#" class="menu_ruta">Calculadora</a> <!--Esto es un "Link pulsable"-->
+
+                    <ul class="menu_menor">
+                        <li class="menu_dentro">
+                            <a href="../Pages/Calculadora.html" class="menu_ruta menu_ruta--dentro">Indice masa corporal</a>
+                        </li>
+                        <li class="menu_dentro">
+                            <a href="../Pages/CaloriasDia.html" class="menu_ruta menu_ruta--dentro">Consumo Kilo/Calorias</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item">
+                    <a href="../Pages/Calendario.html" class="menu_ruta">Calendarios</a> <!--Esto es un "Link pulsable"-->
+                
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="menu_ruta">Recomendaciones Generales </a> <!--Esto es un "Link pulsable"-->
+                </li>
+
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <section class="contenido">
+            <img id="reglamano" src="../ICONS/Altura.png"img>
+            <h1>Indice de Masa Corporal</h1>
+            <p>Esto es una calculadora de IMC (Índice de Masa Corporal) permite evaluar si el peso de una persona se encuentra dentro de un rango saludable según su altura. Al ingresar el peso y la estatura, la herramienta calcula el IMC y muestra en qué categoría se encuentra: bajo peso, normal, sobrepeso u obesidad. Es una forma sencilla y rápida de obtener una referencia general sobre el estado corporal.</p>
+        </section>
+
+        <!--Bloque de contenido para la calculadora de imc con inputs y button-->
+        <div class="container">
+            
+            <h1>Calculadora de IMC</h1>
+
+            <label>Peso (kg):</label>
+            <input type="number" id="peso" placeholder="Ingresa tu peso" min="1" max="500" required>
+
+            <label>Altura (cm):</label>
+            <input type="number" id="altura" placeholder="Ingresa tu altura" min="1" max="260" required>
+            
+            <button onclick="calcularIMC()">Calcular IMC</button>
+
+            <p id="resultado"></p>
+        </div>
+    </main>
+    
+    <div class="EspaciadoXD"></div>
+    <!--Pie de pagina-->
+    <footer>
+        <section>
+            <a href="#">Volver al Arriba</a>
+        </section>
+    </footer>
+</body>
+<!--Apartado de scripts rutas-->
+<script src="../Scripts/script.js"></script>
+<script src="../Scripts/scriptCalc.js"></script>
+</html>

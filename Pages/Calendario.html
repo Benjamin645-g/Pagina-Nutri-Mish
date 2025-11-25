@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutri-Mish | Calendario</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/styleCalendario.css">
+
+</head>
+<body>
+    <!--Menu de arriba-->
+    <nav class="menu">
+        <section class="menu_contenedor"> 
+            <h1 class="menu_logo">Nutri-Mish <img id=logo src="../ICONS/Logo.png"></h1>
+
+            <ul class="menu_rutas">
+                <li class="menu_item menu_item--show">
+                    <a href="../Pages/index.html" class="menu_ruta">Inicio</a> <!--Esto es un "Link pulsable"-->
+                </li>
+            
+                <li class="menu_item">
+                    <a href="#" class="menu_ruta">Calculadora</a> <!--Esto es un "Link pulsable"-->
+
+                    <ul class="menu_menor">
+                        <li class="menu_dentro">
+                            <a href="../Pages/Calculadora.html" class="menu_ruta menu_ruta--dentro">Indice masa corporal</a>
+                        </li>
+                        <li class="menu_dentro">
+                            <a href="../Pages/CaloriasDia.html" class="menu_ruta menu_ruta--dentro">Consumo Kilo/Calorias</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item">
+                    <a href="../Pages/Calendario.html" class="menu_ruta">Calendarios</a> <!--Esto es un "Link pulsable"-->
+                
+                </li>
+                <li class="menu_item">
+                    <a href="../Pages/Recomendacion.html" class="menu_ruta">Recomendaciones Generales </a> <!--Esto es un "Link pulsable"-->
+                </li>
+
+            </ul>
+        </section>
+    </nav>
+    <!--Titulo pagn-->
+    <div class="contenido">
+        <h1>Calendario del mes</h1>
+    </div>
+    <!--2 scrollers con meses y años-->
+    <div class="contenido">
+        <div class="controles">
+            <select class=Cuadro-anho id="mes"></select>
+            <select class=Cuadro-anho id="anio"></select>
+        </div>
+
+        <!--tabla dimensiones de la semana-->
+        <table id="calendario">
+            <thead>
+                <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mié</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sáb</th>
+                    <th>Dom</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!--Bloque de estructura para menu desplegable al pulsar dia-->
+        <div id="panelComidas" class="comidas-panel" style="display:none;">
+            <h3 id="tituloDia"></h3>
+
+            <div class="grupo">
+                <h4>Desayuno</h4>
+                <div id="desayunoLista"></div>
+                <button class="btnAdd" onclick="agregar('desayuno')">+ Agregar</button>
+            </div>
+
+            <div class="grupo">
+                <h4>Almuerzo / Comida</h4>
+                <div id="almuerzoLista"></div>
+                <button class="btnAdd" onclick="agregar('almuerzo')">+ Agregar</button>
+            </div>
+
+            <div class="grupo">
+                <h4>Merienda</h4>
+                <div id="meriendaLista"></div>
+                <button class="btnAdd" onclick="agregar('merienda')">+ Agregar</button>
+            </div>
+
+            <div class="grupo">
+                <h4>Cena</h4>
+                <div id="cenaLista"></div>
+                <button class="btnAdd" onclick="agregar('cena')">+ Agregar</button>
+            </div>
+
+        </div>
+        <!--Vista Previa de los menus al pasar por encima del dia-->
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+    <div class="EspaciadoXD"></div>
+    <!--Pie de pagina-->
+    <footer>
+        <section>
+            <a href="#">Volver Arriba</a>
+        </section>
+        <p>&copy;Copyright 2025</p>
+    </footer>
+    
+</body>
+<!--Rutas scripts-->
+    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/scriptCalendario.js"></script>
+</html>
