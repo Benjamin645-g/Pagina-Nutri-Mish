@@ -1,0 +1,75 @@
+/*Formato del form contenedor de las preguntas*/
+.cal-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.15);
+}
+
+.cal-container h1 {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+/*titulo del form*/
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #2c2c2c;
+}
+/*Tamaño de los inputs y selects*/
+input, select {
+    padding: 10px;
+    border: 2px solid #A5D6A7;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+/*Cambio de color al estar en campo o select*/
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+/*Boton de calcular*/
+.btn-calcular {
+    background-color:#4CAF50;
+    color: white;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.btn-calcular:hover {
+    transition: .3s ease;
+    background-color: #3c8b40;
+}
+/*Formato y distancia de resultado*/
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #F1F8E9;
+    padding: 15px;
+    border-radius: 8px;
+}
+.resultado span {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #2E7D32;
+}
